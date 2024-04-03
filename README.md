@@ -1,5 +1,22 @@
 # tinymediamanager-docker
 
+## README-NEW
+
+### 镜像变更
+
+- 内置 TMM 版本为`3.1.18`
+- 镜像内置中文支持，字体为 [font-wqy-zenhei](https://pkgs.alpinelinux.org/packages?name=font-wqy-zenhei)
+- 从 <https://archive.tinymediamanager.org> 下载官方归档的TMM版本
+- 从 <https://www.tinymediamanager.org/images/tmm.png> 获取应用图标
+
+### 使用方法
+
+- 克隆到本地，`git clone https://github.com/lz-wang/tinymediamanager-docker.git`
+- 使用`docker-compose`工具，运行`docker-compose up`命令启动容器
+
+注意：修改字体后，你需要使用 `docker restart` 重启容器生效
+
+## README-OLD
 A repository for creating a docker container including TinyMediaManager with GUI interface.
 
 ![docker pulls](https://img.shields.io/docker/pulls/romancin/tinymediamanager.svg) ![docker stars](https://img.shields.io/docker/stars/romancin/tinymediamanager.svg) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=X2CT2SWQCP74U)

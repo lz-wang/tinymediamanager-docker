@@ -1,13 +1,16 @@
-tinymediamanager_service:
-    image: romancin/tinymediamanager:latest
+services:
+  tinymediamanager:
+    image: lzwang/tmm:3.1.18
     container_name: tinymediamanager
+    restart: always
     ports:
-      - "5803:5800"
+      - "5800:5800"
+      - "5900:5900"
     environment:
       - USER_ID=0
       - GROUP_ID=0
-      - TZ=Europe/Madrid
-      - VNC_PASSWORD=password
+      - TZ=Asia/Shanghai
+      - KEEP_APP_RUNNIN=1
     volumes:
-      - "/share/Container/tinymediamanager:/config:rw"
-      - "/share/Container/tinymediamanager/media:/media:rw"
+      - "./data:/config/data:rw"
+      - "./media:/media:rw"
